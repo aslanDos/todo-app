@@ -1,16 +1,13 @@
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { View, Text } from "react-native";
+import { StrictMode } from "react";
+import { Link } from "expo-router";
 
-import Login from "./screens/Auth/Login";
-import Home from "./screens/Home"
-
-const Stack = createNativeStackNavigator();
-
-export default function App() {
+export default function Index() {
   return(
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
-        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
-      </Stack.Navigator>
+    <View>
+      <Link href="/(auth)/Signup">Sign up</Link>
+      <Link href="/(auth)">Login</Link>
+    </View>
   );
 }
 

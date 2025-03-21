@@ -4,7 +4,7 @@ import {
     TextInput,
     TouchableOpacity,
 } from "react-native";
-import { Colors } from "@/constants/Colors";
+import COLORS from "@/constants/Colors";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function NewTask({taskText, setTaskText, addTask}:{
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         color: "#333",
     },
     addButton: {
-        backgroundColor: Colors.primary,
+        backgroundColor: COLORS.primary,
         borderRadius: 10,
         padding: 8,
         marginLeft: 20,

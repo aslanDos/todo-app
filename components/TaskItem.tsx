@@ -25,7 +25,7 @@ const TaskItem = ({
                     onValueChange={() => handleDone(task.id)}/>
                 <Text style={[
                     styles.taskText,
-                    task.isDone && {textDecorationLine: "line-through"}
+                    task.isDone ? {textDecorationLine: "line-through"} : null
                 ]}>{task.title}</Text>
             </View>
 
